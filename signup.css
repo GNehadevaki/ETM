@@ -1,0 +1,213 @@
+.form {
+    width: 300px;
+    height: auto;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.form h2 {
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 8px;
+}
+
+.form input {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form select {
+    width: 100%;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid red;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+.form select:focus {
+    outline: none;
+}
+
+.form button {
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    background: red;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s ease ;
+    position: relative;
+}
+
+.form button:hover {
+    background: rgb(248, 247, 247);
+    color: rgb(233, 7, 7);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.link {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center; 
+    color: #020202;/* Center-align the text */
+}
+
+.liw {
+    text-align: center; 
+    font-size: 18px;
+}
+
+
+/* Style for the login link */
+.login-link {
+    color: #1de7c2; /* Set link color to blue */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+   
+  }
+  
+  /* Change link color on hover */
+  .login-link:hover {
+    color: #ffffff; /* Darker blue on hover */
+  }
+  
+  /* Optional: Add some margin and adjust font size */
+  .login-link {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+
+.signup-link {
+    color: #f9f9f9; /* Blue color for signup link */
+    font-weight: bold; /* Bold font weight */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.signup-link:hover {
+    color: #00cc99; /* Change color on hover */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("loginpage.png"); /* Specify the path to your background image */
+    background-size: cover;
+}
+
+
+
+
+.form input::placeholder {
+    color: white; /* Set placeholder text color to white */
+}
+
+.form select {
+    /* Other styles */
+    color: black; /* Set select menu text color to black */
+}
+
+
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #ffffff40;
+    box-shadow: 0 0 0 2px #ffffff20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #f5fbff;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .animated-button span:first-child {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 5px #2195f360;
+    color: #ffffff;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+  }
+  
+  .animated-button:hover span:last-child {
+    width: 320px;
+    height: 150px;
+    opacity: 1;
+  }
+  
+  
+  

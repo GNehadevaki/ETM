@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Task Management</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="background-container">
+  <div class="container">
+    <h1>Employee Task Management</h1>
+    <div id="login-container">
+      <h2>Login</h2>
+     
+      <button onclick="redirectToLogin()">Login</button>
+
+    </div>
+    <div id="register-container">
+      <h2>Register</h2>
+
+      <button onclick="redirectTosignup()">Register</button>
+    </div>
+    <div id="task-form" style="display: none;">
+      <input type="text" id="task-input" placeholder="Enter task...">
+      <input type="datetime-local" id="task-datetime" placeholder="Select date and time...">
+      <select id="priority">
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+      <select id="category">
+        <option value="work">Work</option>
+        <option value="personal">Personal</option>
+        <option value="other">Other</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+      <div class="button-container">
+        <button onclick="prioritizeTasks()">Prioritize Tasks</button>
+        <button onclick="filterTasks('work')">Filter Work Tasks</button>
+        <button onclick="filterTasks('personal')">Filter Personal Tasks</button>
+        <button onclick="filterTasks('other')">Filter Other Tasks</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+    <ul id="task-list">
+    </ul>
+  </div>
+</div>
+<script>
+  function redirectToLogin() {
+    window.location.href = "login.html";
+}
+
+function redirectTosignup() {
+    window.location.href = "signup.html";
+}
+
+</script>
+<script src="scripts.js"></script>
+
+</body>
+</html>

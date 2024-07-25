@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+        <form action="/signup" method="POST">
+            <h2>Signup Here</h2>
+            <input type="text" name="name" id="name" placeholder="Enter name"required>
+            
+            <input type="email" name="email" id="email" placeholder="Enter email" required>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required><br>
+            <select name="gender" id="gender">
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button class="animated-button" onclick="validateAndShowNext()">
+                <span>Signup</span>
+                <span></span>
+              </button>
+              
+
+            <!-- <button class="animated-button" onclick="validateAndShowNext()">Signup</button> -->
+            <p class="link">Already have an account? </p>
+            <p class="liw"><a href="login.html" class="login-link">Login here</a></p>
+        </form>
+        </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
